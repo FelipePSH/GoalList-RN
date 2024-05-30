@@ -5,7 +5,7 @@ function GoalInput(props) {
 const [enteredGoalText, setEnteredGoalText] = useState("");
 function goalInputHandler(enteredText) {
     setEnteredGoalText(enteredText);
-  }
+  }     
 
   function addGoalHandler() {
     props.onAddGoal(enteredGoalText);

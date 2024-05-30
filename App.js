@@ -26,9 +26,13 @@ export default function App() {
         <FlatList
           data={goals}
           renderItem={(itemData) => {
+            {console.log(itemData.item.text)}
             return <GoalItem text={itemData.item.text} />;
+           
           }}
         />
+        
+        
       </View>
     </View>
   );
